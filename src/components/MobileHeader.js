@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import RotatingText from "react-rotating-text";
 import logo from "../assets/logo.png";
 import { FiX } from "react-icons/fi";
-import { FaFacebookF, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export default function MobileHeader(props) {
   const rotatingTexts = [
@@ -128,8 +128,12 @@ export default function MobileHeader(props) {
         <div className="social">
           <span className="tiny-title text-uppercase">Find With Me</span>
           <div className="icon-list">
-            <a href="https://facebook.com//" target="_blank" rel="noreferrer">
-              <FaFacebookF />
+            <a
+              href="https://www.linkedin.com/in/Iamabhishektyagi/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <FaLinkedinIn />
             </a>
             <a
               href="https://instagram.com/abhinavtyagi2918/"
@@ -138,7 +142,11 @@ export default function MobileHeader(props) {
             >
               <FaInstagram />
             </a>
-            <a href="https://twitter.com//" target="_blank" rel="noreferrer">
+            <a
+              href="https://x.com/abhityagi2918/"
+              target="_blank"
+              rel="noreferrer"
+            >
               <FaTwitter />
             </a>
           </div>

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { createRoot } from "react-dom/client";
 import ContactImg from "../assets/contact.png";
 import {
-  FaFacebookF,
   FaInstagram,
   FaTwitter,
   FaTelegram,
@@ -54,8 +53,6 @@ export default function Contact() {
   // For sending message as email using emailjs
   function submitHandler(event) {
     event.preventDefault();
-
-    alert(userId);
 
     setSendButton(false);
     messageStatus("Sending... ", <BiMailSend />, -1);
@@ -140,13 +137,6 @@ export default function Contact() {
                 <div className="icon-list d-flex flex-column flex-xxl-row align-items-start">
                   <div className="d-flex">
                     <a
-                      href="https://facebook.com//"
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      <FaFacebookF />
-                    </a>
-                    <a
                       href="https://instagram.com/abhinavtyagi2918/"
                       target="_blank"
                       rel="noreferrer"
@@ -154,7 +144,7 @@ export default function Contact() {
                       <FaInstagram />
                     </a>
                     <a
-                      href="https://twitter.com//"
+                      href="https://x.com/abhityagi2918/"
                       target="_blank"
                       rel="noreferrer"
                     >
@@ -162,7 +152,11 @@ export default function Contact() {
                     </a>
                   </div>
                   <div className="d-flex mt-3 mt-xxl-0">
-                    <a href="https://t.me/" target="_blank" rel="noreferrer">
+                    <a
+                      href="https://t.me/abhishektyagi2918official/"
+                      target="_blank"
+                      rel="noreferrer"
+                    >
                       <FaTelegram />
                     </a>
                     <a

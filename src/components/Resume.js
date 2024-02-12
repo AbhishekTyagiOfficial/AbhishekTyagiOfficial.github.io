@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import EducationTab from './EducationTab';
-import ProfessionalSkillsTab from './ProfessionalSkillsTab';
-import ExperienceTab from './ExperienceTab';
-import ProjectsTab from './ProjectsTab';
+import React, { useState } from "react";
+import EducationTab from "./EducationTab";
+import ProfessionalSkillsTab from "./ProfessionalSkillsTab";
+import ExperienceTab from "./ExperienceTab";
+import ProjectsTab from "./ProjectsTab";
 
 export default function Resume() {
   const [activeTab, setActiveTab] = useState(0);
@@ -12,7 +12,7 @@ export default function Resume() {
   };
 
   const renderTabs = () => {
-    const tabs = ['Education', 'Experience', 'Professional Skills', 'Projects'];
+    const tabs = ["Education", "Experience", "Professional Skills", "Projects"];
 
     return tabs.map((tab, index) => (
       <li
@@ -20,11 +20,12 @@ export default function Resume() {
         className="nav-item"
         onClick={() => handleTabClick(index)}
       >
-        <h6 className={`nav-link ${activeTab === index ? 'active' : ''}`}>{tab}</h6>
+        <h6 className={`nav-link ${activeTab === index ? "active" : ""}`}>
+          {tab}
+        </h6>
       </li>
     ));
   };
-
 
   return (
     <div className="container section-separator section-gap pb-0" id="resume">
@@ -36,14 +37,13 @@ export default function Resume() {
             {renderTabs()}
           </ul>
           <div className="tab-content my-5">
-            {activeTab === 0 && <EducationTab/>}
-            {activeTab === 1 && <ExperienceTab/>}
-            {activeTab === 2 && <ProfessionalSkillsTab/>}
-            {activeTab === 3 && <ProjectsTab/>}
+            {activeTab === 0 && <EducationTab />}
+            {activeTab === 1 && <ExperienceTab />}
+            {activeTab === 2 && <ProfessionalSkillsTab />}
+            {activeTab === 3 && <ProjectsTab />}
           </div>
         </div>
-        
       </div>
     </div>
-  )
+  );
 }

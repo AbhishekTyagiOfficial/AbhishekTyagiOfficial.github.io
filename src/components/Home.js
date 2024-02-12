@@ -1,7 +1,7 @@
 import React from "react";
 import RotatingText from "react-rotating-text";
 import {
-  FaFacebookF,
+  FaLinkedinIn,
   FaInstagram,
   FaTwitter,
   FaJava,
@@ -45,11 +45,11 @@ export default function Home() {
               <span className="tiny-title text-uppercase">Find With Me</span>
               <div className="icon-list">
                 <a
-                  href="https://facebook.com//"
+                  href="https://www.linkedin.com/in/Iamabhishektyagi/"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <FaFacebookF />
+                  <FaLinkedinIn />
                 </a>
                 <a
                   href="https://instagram.com/abhinavtyagi2918/"
@@ -59,7 +59,7 @@ export default function Home() {
                   <FaInstagram />
                 </a>
                 <a
-                  href="https://twitter.com//"
+                  href="https://x.com/abhityagi2918/"
                   target="_blank"
                   rel="noreferrer"
                 >
